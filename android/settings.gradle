@@ -1,6 +1,8 @@
 pluginManagement { includeBuild("../node_modules/@react-native/gradle-plugin") }
 plugins { id("com.facebook.react.settings") }
 extensions.configure(com.facebook.react.ReactSettingsExtension){ ex -> ex.autolinkLibrariesFromCommand() }
+include ':react-native-converted-in-sdk'
+project(':react-native-converted-in-sdk').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-converted-in-sdk/android')
 rootProject.name = 'TestReactNativeConvertedInSdk'
 include ':app'
 includeBuild('../node_modules/@react-native/gradle-plugin')

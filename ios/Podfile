@@ -28,6 +28,8 @@ target 'TestReactNativeConvertedInSdk' do
     # Pods for testing
   end
 
+  pod 'react-native-converted-in-sdk', :path => '../node_modules/react-native-converted-in-sdk'
+
   post_install do |installer|
     # https://github.com/facebook/react-native/blob/main/packages/react-native/scripts/react_native_pods.rb#L197-L202
     react_native_post_install(
